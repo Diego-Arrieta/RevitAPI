@@ -1,0 +1,6 @@
+C:\Users\diego\source\repos\RevitAPI3\RevitAPI3\bin\Debug\RevitAPI3.dll
+C:\Users\diego\source\repos\RevitAPI3\RevitAPI3\bin\Debug\RevitAPI3.pdb
+C:\Users\diego\source\repos\RevitAPI3\RevitAPI3\obj\Debug\RevitAPI3.csproj.AssemblyReference.cache
+C:\Users\diego\source\repos\RevitAPI3\RevitAPI3\obj\Debug\RevitAPI3.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\RevitAPI3\RevitAPI3\obj\Debug\RevitAPI3.dll
+C:\Users\diego\source\repos\RevitAPI3\RevitAPI3\obj\Debug\RevitAPI3.pdb
