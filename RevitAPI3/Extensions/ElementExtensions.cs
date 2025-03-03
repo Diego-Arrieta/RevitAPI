@@ -1,4 +1,5 @@
 ﻿using Autodesk.Revit.DB;
+using Autodesk.Revit.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +14,21 @@ namespace RevitAPI3.Extensions
         {
             List<Solid> solids = new List<Solid>();
 
+            if (element == null)
+            {
+                TaskDialog.Show("Error", "El elemento no puede ser nulo.");
+                return solids;
+            }           
+
             GeometryElement geometryElement = element.get_Geometry(options);
             if (geometryElement != null)
             {
-                ProcessGeometry(geometryElement, solids);
-            }           
+                TaskDialog.Show("Información", "No se pudo obtener la geometría del elemento.");
+                return solids;                
+            }
+
+            ProcessGeometry(geometryElement, solids);
+            TaskDialog.Show("Resultado", $"Cantidad de sólidos obtenidos: {solids.Count}");
 
             return solids;
         }
@@ -31,11 +42,18 @@ namespace RevitAPI3.Extensions
                 }
                 else if (geometryObject is GeometryInstance geometryInstance)
                 {
-                    GeometryElement instanceGeometry = geometryInstance.GetInstanceGeometry();
-                    if (instanceGeometry != null)
+                    try
                     {
-                        ProcessGeometry(instanceGeometry, solids);
-                    }                    
+                        GeometryElement instanceGeometry = geometryInstance.GetInstanceGeometry();
+                        if (instanceGeometry != null)
+                        {
+                            ProcessGeometry(instanceGeometry, solids);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        TaskDialog.Show("Error", $"Error al procesar GeometryInstance: {ex.Message}");
+                    }
                 }
             }
         }
