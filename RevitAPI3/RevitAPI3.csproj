@@ -51,12 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\DocumentExtensions.cs" />
-    <Compile Include="GeometryIntro3.cs" />
-    <Compile Include="GeometryIntro2.cs" />
+    <Compile Include="Extensions\ElementExtensions.cs" />
+    <Compile Include="GeometryIntro.cs" />
     <Compile Include="GeometryUtils\SolidUtils.cs" />
     <Compile Include="Trial.cs" />
     <Compile Include="Extensions\UIDocumentExtensions.cs" />
-    <Compile Include="GeometryIntro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Wrappers\ColumnWrapper.cs" />
     <Compile Include="Wrappers\IElementWrapper.cs" />

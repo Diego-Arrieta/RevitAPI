@@ -20,11 +20,16 @@ namespace RevitAPI3
             UIDocument uidoc = commandData.Application.ActiveUIDocument;
             Document doc = uidoc.Document;
 
-            var wall = uidoc.GetSelectedElements()[0];
+            Element element = uidoc.GetSelectedElements()[0];
 
-            var solids = wall.get_Geometry(new Options())
-                .Cast<Solid>();
+            Options options = new Options();
+            options.ComputeReferences = true;
+            options.DetailLevel = ViewDetailLevel.Fine;
+            options.IncludeNonVisibleObjects = true;
 
+            List<Solid> solids = element.GetSolids(options);
+
+            Solid mergedSolid = GeometryUtils.SolidUtils.UnionSolids(solids);
 
             doc.Run(() =>
             {
