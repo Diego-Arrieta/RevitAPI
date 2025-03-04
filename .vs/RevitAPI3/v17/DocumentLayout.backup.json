@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|c:\\users\\uroggio\\source\\repos\\revitapi\\revitapi3\\extensions\\elementextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|c:\\users\\diego\\source\\repos\\revitapi3\\revitapi3\\extensions\\elementextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|solutionrelative:revitapi3\\extensions\\elementextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\revitapi3\\trial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|solutionrelative:revitapi3\\trial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\revitapi3\\geometryintro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|solutionrelative:revitapi3\\geometryintro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|c:\\users\\diego\\source\\repos\\revitapi3\\revitapi3\\geometry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|solutionrelative:revitapi3\\geometry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 114,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,39 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Trial.cs",
-              "DocumentMoniker": "C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\RevitAPI3\\Trial.cs",
-              "RelativeDocumentMoniker": "RevitAPI3\\Trial.cs",
-              "ToolTip": "C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\RevitAPI3\\Trial.cs",
-              "RelativeToolTip": "RevitAPI3\\Trial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T19:11:15.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GeometryIntro.cs",
-              "DocumentMoniker": "C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\RevitAPI3\\GeometryIntro.cs",
-              "RelativeDocumentMoniker": "RevitAPI3\\GeometryIntro.cs",
-              "ToolTip": "C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\RevitAPI3\\GeometryIntro.cs",
-              "RelativeToolTip": "RevitAPI3\\GeometryIntro.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T03:17:23.535Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ElementExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\RevitAPI3\\Extensions\\ElementExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\RevitAPI3\\Extensions\\ElementExtensions.cs",
               "RelativeDocumentMoniker": "RevitAPI3\\Extensions\\ElementExtensions.cs",
-              "ToolTip": "C:\\Users\\UROGGIO\\source\\repos\\RevitAPI\\RevitAPI3\\Extensions\\ElementExtensions.cs",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\RevitAPI3\\Extensions\\ElementExtensions.cs",
               "RelativeToolTip": "RevitAPI3\\Extensions\\ElementExtensions.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA6wBQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T03:05:11.356Z",
+              "WhenOpened": "2025-03-04T02:21:29.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Geometry.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\RevitAPI3\\Geometry.cs",
+              "RelativeDocumentMoniker": "RevitAPI3\\Geometry.cs",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\RevitAPI3\\Geometry.cs",
+              "RelativeToolTip": "RevitAPI3\\Geometry.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T03:17:23.535Z",
               "EditorCaption": ""
             }
           ]

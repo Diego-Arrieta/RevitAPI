@@ -13,30 +13,30 @@ using System.Threading.Tasks;
 namespace RevitAPI3
 {
     [Transaction(TransactionMode.Manual)]
-    public class GeometryIntro : IExternalCommand
+    public class Geometry : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
-            UIDocument uidoc = commandData.Application.ActiveUIDocument;
-            Document doc = uidoc.Document;
+            UIDocument uiDocument = commandData.Application.ActiveUIDocument;
+            Document document = uiDocument.Document;
 
-            Element element = uidoc.GetSelectedElements()[0];
+            Element element = uiDocument.GetSelectedElements()[0];
 
             Options options = new Options();
             options.ComputeReferences = true;
             options.DetailLevel = ViewDetailLevel.Fine;
             options.IncludeNonVisibleObjects = true;
 
-            List<Solid> solids = element.GetSolids(options);
+            List<Solid> solids = element.GetSolids(document, options);
+
 
             Solid mergedSolid = GeometryUtils.SolidUtils.UnionSolids(solids);
 
-            doc.Run(() =>
+            document.Run(() =>
             {
-                foreach (var solid in solids)
-                {
-                    solid.Visualize(doc);
-                }
+
+                mergedSolid.Visualize(document);
+
             });
 
             return Result.Succeeded;

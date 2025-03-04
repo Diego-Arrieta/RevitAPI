@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="Extensions\DocumentExtensions.cs" />
     <Compile Include="Extensions\ElementExtensions.cs" />
-    <Compile Include="GeometryIntro.cs" />
+    <Compile Include="Geometry.cs" />
     <Compile Include="GeometryUtils\SolidUtils.cs" />
     <Compile Include="Trial.cs" />
     <Compile Include="Extensions\UIDocumentExtensions.cs" />

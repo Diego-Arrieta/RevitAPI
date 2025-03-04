@@ -10,7 +10,7 @@ namespace RevitAPI3.Extensions
 {
     public static class ElementExtensions
     {
-        public static List<Solid> GetSolids(this Element element, Options options)
+        public static List<Solid> GetSolids(this Element element, Document document, Options options)
         {
             List<Solid> solids = new List<Solid>();
 
@@ -21,14 +21,25 @@ namespace RevitAPI3.Extensions
             }           
 
             GeometryElement geometryElement = element.get_Geometry(options);
-            if (geometryElement != null)
+            if (geometryElement == null)
             {
                 TaskDialog.Show("Información", "No se pudo obtener la geometría del elemento.");
-                return solids;                
+                return solids;
             }
 
             ProcessGeometry(geometryElement, solids);
             TaskDialog.Show("Resultado", $"Cantidad de sólidos obtenidos: {solids.Count}");
+
+            if (element is FamilyInstance familyInstance)
+            {
+                List<ElementId> subcomponentIds = familyInstance.GetSubComponentIds().ToList();
+                foreach (ElementId subcomponentId in subcomponentIds)
+                {
+                    Element subcomponent = document.GetElement(subcomponentId);
+                    GeometryElement geometrySubcomponent = subcomponent.get_Geometry(options);
+                    ProcessGeometry(geometrySubcomponent, solids);
+                }
+            }
 
             return solids;
         }
@@ -42,17 +53,10 @@ namespace RevitAPI3.Extensions
                 }
                 else if (geometryObject is GeometryInstance geometryInstance)
                 {
-                    try
+                    GeometryElement instanceGeometry = geometryInstance.GetInstanceGeometry();
+                    if (instanceGeometry != null)
                     {
-                        GeometryElement instanceGeometry = geometryInstance.GetInstanceGeometry();
-                        if (instanceGeometry != null)
-                        {
-                            ProcessGeometry(instanceGeometry, solids);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        TaskDialog.Show("Error", $"Error al procesar GeometryInstance: {ex.Message}");
+                        ProcessGeometry(instanceGeometry, solids);
                     }
                 }
             }
