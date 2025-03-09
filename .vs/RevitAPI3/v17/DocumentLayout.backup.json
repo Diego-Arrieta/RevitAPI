@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|c:\\users\\diego\\source\\repos\\revitapi3\\revitapi3\\extensions\\elementextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|solutionrelative:revitapi3\\extensions\\elementextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|c:\\users\\diego\\source\\repos\\revitapi3\\revitapi3\\geometry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59546981-5752-40F8-A24C-DAD268F1EA5A}|RevitAPI3\\RevitAPI3.csproj|solutionrelative:revitapi3\\geometry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,22 +32,9 @@
               "RelativeDocumentMoniker": "RevitAPI3\\Extensions\\ElementExtensions.cs",
               "ToolTip": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\RevitAPI3\\Extensions\\ElementExtensions.cs",
               "RelativeToolTip": "RevitAPI3\\Extensions\\ElementExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T02:21:29.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Geometry.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\RevitAPI3\\Geometry.cs",
-              "RelativeDocumentMoniker": "RevitAPI3\\Geometry.cs",
-              "ToolTip": "C:\\Users\\diego\\source\\repos\\RevitAPI3\\RevitAPI3\\Geometry.cs",
-              "RelativeToolTip": "RevitAPI3\\Geometry.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T03:17:23.535Z",
+              "WhenOpened": "2025-03-09T05:40:55.669Z",
               "EditorCaption": ""
             }
           ]

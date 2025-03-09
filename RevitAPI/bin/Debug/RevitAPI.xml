@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RevitAPI</name>
+    </assembly>
+    <members>
+        <member name="M:RevitAPI.UIDocumentExtensions.PickElements(Autodesk.Revit.UI.UIDocument,System.String)">
+            <summary>
+            This method select elements from the model
+            </summary>
+            <param name="uiDocument"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
