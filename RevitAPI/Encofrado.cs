@@ -1,13 +1,10 @@
 ﻿using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
-using Autodesk.Revit.UI.Selection;
 using RevitAPI.Extensions;
-using System;
+using RevitAPI.GeometryUtils;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RevitAPI
 {
@@ -21,7 +18,7 @@ namespace RevitAPI
 
             // Code
             Reference faceReference = uiDocument.Selection.PickObject(Autodesk.Revit.UI.Selection.ObjectType.Face, "Select a face");
-            Autodesk.Revit.DB.Element element = document.GetElement(faceReference);
+            var element = document.GetElement(faceReference);
             GeometryObject geometryObject = element.GetGeometryObjectFromReference(faceReference);
 
             if (geometryObject is Face face)

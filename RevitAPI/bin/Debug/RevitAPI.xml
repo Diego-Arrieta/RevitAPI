@@ -4,7 +4,7 @@
         <name>RevitAPI</name>
     </assembly>
     <members>
-        <member name="M:RevitAPI.UIDocumentExtensions.PickElements(Autodesk.Revit.UI.UIDocument,System.String)">
+        <member name="M:RevitAPI.Extensions.UIDocumentExtensions.PickElements(Autodesk.Revit.UI.UIDocument,System.String)">
             <summary>
             This method select elements from the model
             </summary>

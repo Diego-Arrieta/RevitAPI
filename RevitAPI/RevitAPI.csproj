@@ -51,10 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encofrado.cs" />
     <Compile Include="Extensions\DocumentExtensions.cs" />
     <Compile Include="Extensions\ElementExtensions.cs" />
     <Compile Include="Geometry.cs" />
+    <Compile Include="GeometryUtils\LineUtils.cs" />
+    <Compile Include="GeometryUtils\PlaneUtils.cs" />
     <Compile Include="GeometryUtils\SolidUtils.cs" />
+    <Compile Include="GisTest.cs" />
     <Compile Include="Trial.cs" />
     <Compile Include="Extensions\UIDocumentExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -88,7 +88,10 @@ namespace RevitAPI.Extensions
                 .Cast<Level>()
                 .ToList();
         }
-        public static List<TElement> GetElementByTypes<TElement>(this Autodesk.Revit.DB.Document document, Func<TElement, bool> validate = null) where TElement : class
+        public static List<TElement> GetElementByTypes<TElement>(
+            this Autodesk.Revit.DB.Document document, 
+            Func<TElement, bool> validate = null) 
+                where TElement : class
         {
             validate = validate ?? (e => true);
             var elements = new FilteredElementCollector(document)
